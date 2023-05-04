@@ -1,0 +1,98 @@
+$main-color: rgb(66, 122, 164);
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .HomePage {
+    background-color: white;
+    width: 100%;
+    .HomePage__Header {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      .HomePage__Header__Left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          color: $main-color;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 100;
+  
+        .HomePage__Header__Left__Item1 {
+          display: flex;
+        }
+      }
+      .HomePage__Header__Right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          gap: 2rem;
+  
+        .HomePage__Header__Right__Item1 {
+            display: flex;
+            align-items: center;
+            .Item1__Login{
+                color: $main-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                margin-left: 0.25rem;
+                margin-right: 0.25rem;
+               
+            }
+          
+        }
+        .HomePage__Header__Right__Item2 {
+          margin-right: 1rem;
+        }
+        .HomePage__Header__Right__Item3 {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .HomePage__NavBar {
+        background-color: rgb(66, 122, 164);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        .HomePage__NavBar__Items {
+            background-color: rgb(66, 122, 164);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            height: 3rem;
+        }
+    }
+
+    .HomePage__BotContainer  {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
+      
+    }
+    
+    df-messenger {
+      --df-messenger-bot-message: rgb(66, 122, 164);
+      --df-messenger-font-color: white;
+      --df-messenger-button-titlebar-color: rgb(66, 122, 164);
+      --df-messenger-send-icon: rgb(66, 122, 164);
+      --df-messenger-user-message: #479b3d;
+    }
+    
+    
+  }
+  

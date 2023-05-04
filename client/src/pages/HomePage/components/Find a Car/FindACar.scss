@@ -1,0 +1,142 @@
+$main-color: rgb(66, 122, 164);
+
+.HomePage {
+  .FindACar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .FindACar__Filters {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+
+      .FindACar__Filters__Form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        margin-top: 5rem;
+
+        select {
+          width: 100%;
+          height: 3rem;
+          border-radius: 0.5rem;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          padding-left: 1rem;
+          font-size: 1rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+
+        .FindACar__Filters__Form__Label {
+          margin-top: 5rem;
+        }
+        .FindACar__Filters__Form__Select {
+          margin-bottom: 1rem;
+        }
+      }
+
+      .Search__Button {
+        background-color: $main-color;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 1rem;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .Clear__Button {
+        background-color: rgba(255, 255, 255, 0.895);
+        color: $main-color;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+
+    .FindACar__Car {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+
+      .FindACar__Car__Sort {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .FindACar__Car__Container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        .FindACar__Car__Image {
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .FindACar__Car__Item {
+          width: 20%;
+          display: flex;
+          flex-direction: column;
+          margin-right: 2rem;
+          margin-bottom: 2rem;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+        .FindACar__Car__Details {
+          display: flex;
+          flex-direction: column;
+          margin-top: 1rem;
+          margin-left: 1rem;
+        }
+
+        .FindACar__Car__Name {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin-bottom: 0.4rem;
+        }
+
+        .FindACar__Car__Price {
+        
+          font-size: 1.1rem;
+          font-weight: 500;
+          color: red;
+        }
+
+        .FindACar__Car__Location {
+          font-size: 1rem;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}
